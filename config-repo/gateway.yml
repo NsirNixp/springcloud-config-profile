@@ -22,10 +22,10 @@ zuul:
     auth-service:
       path: /uaa/**
       stripPrefix: false
-      sensitiveHeaders:
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
     svca-service:
       path: /svca/**
-      sensitiveHeaders:
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
     svcb-service:
       path: /svcb/**
-      sensitiveHeaders:
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
